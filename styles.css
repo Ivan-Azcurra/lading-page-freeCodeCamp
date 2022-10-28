@@ -202,6 +202,11 @@ body {
   font-weight: 400;
 }
 
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
 /* END PRICING SECTION *
 
 /* FOOTER SECTION */
@@ -231,3 +236,18 @@ body {
 }
 
 /* END FOOTER SECTION */
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+  #pricing {
+    grid-template-columns: 1fr ;
+  }
+
+  .product{
+    max-width: 300px;
+    width: 100%;    
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
